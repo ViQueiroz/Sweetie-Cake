@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="img/Logo2.png">
+  <!--meu css-->
+  <link rel="stylesheet" href="css/meu_estilo.css">
+  <title>Sweetie Cake</title>
+</head>
+
+<body class="bg-Cliente">
+  <!--criando o cabeçalho-->
+  <header class="p-3 bg-Preto text-white d-flex">
+    <img src="img/Logo2.png" alt="" srcset="">
+
+    <h3 class="m-auto align-self-center" style="color: white;">Sweetie Cake</h3>
+
+
+
+
+  </header>
+  <!-- Barra de Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-AzulEscuro">
+
+    <div class="container-fluid">
+      <!-- Botão Hamburguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu1"
+        aria-controls="menu1" aria-expanded="false" aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapsed navbar-collapse" id="menu1">
+        <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  active" href="cliente.html">Cliente da Sweetie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <br>
+  <center>
+    <h1 class="m-auto">Que tal fazer parte da família Sweetie Cake?</h1>
+  </center>
+  <br>
+  <!--inicio form-->
+  <div>
+
+    <form action="https://api.staticforms.xyz/submit" method="post" class="container" class="row g-3 needs-validation"
+      novalidate>
+      <!--chave de acesso-->
+      <input type="hidden" name="accessKey" value="beea7e4b-ddeb-430b-8e90-356c80af41e5">
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" name="$nome" required>
+        <div class="valid-feedback">
+          Digite o nome
+        </div>
+      </div>
+      <br>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Sobrenome</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" name="$sobrenome" required>
+        <div class="valid-feedback">
+          Digite o nome
+        </div>
+      </div>
+      <br>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Email do Cliente</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">email</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+            required>
+          <div class="invalid-feedback">
+
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">CPF</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Digite o CPF
+        </div>
+      </div>
+      <br>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Bolos</label>
+        <select class="form-select" id="validationCustom04" required>
+
+          <option selected disabled value="">Bolo de Morango</option>
+          <option>Bolo de Limão</option>
+          <option>Bolo de Avelã</option>
+          <option>Bolo de Maracujá</option>
+
+        </select>
+        <div class="invalid-feedback">
+          Escolha um bolo
+        </div>
+      </div>
+      <br>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Tortas</label>
+        <select class="form-select" id="validationCustom04" required>
+
+          <option selected disabled value="">Torta de Morango</option>
+          <option>Torta de Limão</option>
+          <option>Torta de Chocolate</option>
+          <option>Torta de Maracujá</option>
+
+        </select>
+        <div class="invalid-feedback">
+          Escolha uma torta
+        </div>
+      </div>
+        <br>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Mousses</label>
+          <select class="form-select" id="validationCustom04" required>
+
+            <option selected disabled value="">Mousse de Morango</option>
+            <option>Mousse de Limão</option>
+            <option>Mousse de Chocolate</option>
+            <option>Mousse de Maracujá</option>
+
+          </select>
+          <div class="invalid-feedback">
+            Escolha um mousse
+          </div>
+        </div>
+        <br>
+        <div class="col-12">
+          <button class="btn btn-dark" type="submit">Cadastrar</button>
+        </div>
+    </form>
+  </div>
+  
+ 
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<!--meu script-->
+<script>
+  function marcar(obj) {
+    document.getElementById(obj).classList.toggle('active')
+  }
+</script>
+
+</html>
+
+
